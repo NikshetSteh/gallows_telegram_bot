@@ -66,15 +66,15 @@ logging.info(f"====={datetime.now()}=====")
 if not config.USE_WEBHOOK:
     executor.start_polling(dispatcher, skip_updates = True)
 else:
-    async def on_startup(dispatcher):
+    async def on_startup(dispatcher_i):
         await bot.set_webhook(WEBHOOK_URL, drop_pending_updates = True)
 
 
-    async def on_shutdown(dispatcher):
+    async def on_shutdown(dispatcher_i):
         await bot.delete_webhook()
 
     start_webhook(
-        dispatcher = dp,
+        dispatcher = dispatcher,
         webhook_path = WEBHOOK_PATH,
         skip_updates = True,
         on_startup = on_startup,
