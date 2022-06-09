@@ -67,7 +67,7 @@ if not config.USE_WEBHOOK:
     executor.start_polling(dispatcher, skip_updates = True)
 else:
     async def on_startup(dispatcher_i):
-        await bot.set_webhook(WEBHOOK_URL, drop_pending_updates = True)
+        await bot.set_webhook(config.WEBHOOK_URL, drop_pending_updates = True)
 
 
     async def on_shutdown(dispatcher_i):
