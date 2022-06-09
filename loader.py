@@ -1,5 +1,5 @@
-from gallows import user
-from gallows import config
+import user
+import config
 
 import sqlite3
 import logging

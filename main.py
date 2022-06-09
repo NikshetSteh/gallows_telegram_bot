@@ -7,15 +7,15 @@ from aiogram.types import ReplyKeyboardRemove, \
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
-from gallows.data import replicas
-from gallows import user
-from gallows import loader
+from data import replicas
+import user
+import loader
 
 from datetime import datetime
 
 import logging
 
-from gallows import config
+import config
 
 file_log = logging.FileHandler("logs\logs.log")
 console_out = logging.StreamHandler()
