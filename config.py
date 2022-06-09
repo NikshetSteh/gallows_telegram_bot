@@ -16,4 +16,4 @@ WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}'
 
 # webserver settings
 WEBAPP_HOST = '0.0.0.0'
-WEBAPP_PORT = 8000
+WEBAPP_PORT = os.getenv('PORT', default=8000)
