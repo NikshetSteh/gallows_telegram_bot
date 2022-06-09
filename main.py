@@ -57,7 +57,7 @@ async def get_new_message(message: types.Message):
 
 loader.Loader.load(users)
 
-user.load_words("D:\project\python_data\project\gallows\data\\")
+user.load_words("data/")
 
 logging.info(f"====={datetime.now()}=====")
 
