@@ -42,10 +42,18 @@ async def help(message: types.Message):
 
 @dispatcher.message_handler(commands=['start_game', 'новая_игра'])
 async def start_new_game(message: types.Message):
+    if not message.from_user.id in users:
+        logging.info(f"creat new acount: {message.from_user.id}")
+        users.update({message.from_user.id: user.User(message.from_user.id)})
+
     await users[message.from_user.id].start_game(message)
 
 @dispatcher.message_handler(commands=['статистика'])
 async def start_new_game(message: types.Message):
+    if not message.from_user.id in users:
+        logging.info(f"creat new acount: {message.from_user.id}")
+        users.update({message.from_user.id: user.User(message.from_user.id)})
+    
     await users[message.from_user.id].print_statistics(message)
 
 
