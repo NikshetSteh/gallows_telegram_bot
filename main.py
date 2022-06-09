@@ -75,7 +75,7 @@ else:
 
     start_webhook(
         dispatcher = dispatcher,
-        webhook_path = WEBHOOK_PATH,
+        webhook_path = config.WEBHOOK_PATH,
         skip_updates = True,
         on_startup = on_startup,
         on_shutdown = on_shutdown,
