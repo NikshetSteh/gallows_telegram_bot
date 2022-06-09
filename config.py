@@ -2,7 +2,7 @@ TOKEN = "5363987082:AAF0g60EIWiKVNvg7VtW-6e_M41lkS50hzM"
 
 DATABESE_PATH = "data\db\database.sqlite3"
 
-USE_WEBHOOK = False
+USE_WEBHOOK = True
 
 # host settings
 HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
