@@ -1,0 +1,134 @@
+INFO:root:=====2022-06-09 18:10:23.417013=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:=====2022-06-09 18:12:37.696907=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:=====2022-06-09 18:17:07.430953=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:35:24.662069=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:35:48.891511=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new acount: 1729630908
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:36:16.914675=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new acount: 1729630908
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:36:55.678932=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:37:54.894699=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new acount: 1729630908
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:38:44.824440=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new acount: 1729630908
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:save data successful...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:45:37.503344=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new game тюльпан with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:player 1729630908 wins with word тюльпан
+INFO:root:player 1729630908 end game
+INFO:root:creat new game телевизор with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:creat new game логотип with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:creat new game парта with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:player 1729630908 wins with word парта
+INFO:root:player 1729630908 end game
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:50:27.825876=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new game парта with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:player 1729630908 wins with word парта
+INFO:root:player 1729630908 end game
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:51:00.440501=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:root:creat new game тюльпан with 9 lives
+INFO:root:player 1729630908 start game with __hard 1
+INFO:root:player 1729630908 wins with word тюльпан
+INFO:root:player 1729630908 end game
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:save data successful...
+INFO:root:load data...
+INFO:root:load data successful
+INFO:root:=====2022-06-09 18:51:35.311965=====
+INFO:aiogram:Bot: gallows game online [@my_super_puper_gallows_game_bot]
+WARNING:aiogram:Updates were skipped successfully.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:root:save data...
+INFO:root:save data successful...
