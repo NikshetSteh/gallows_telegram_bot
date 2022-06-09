@@ -7,6 +7,8 @@ from aiogram.types import ReplyKeyboardRemove, \
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
+from aiogram.utils.executor import start_webhook
+
 from data import replicas
 import user
 import loader
