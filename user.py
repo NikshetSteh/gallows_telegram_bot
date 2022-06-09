@@ -5,7 +5,7 @@ from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton
 
-from gallows.data import replicas
+from data import replicas
 from enum import Enum
 from random import randint
 
