@@ -12,6 +12,8 @@ class Loader:
 
             query = """ CREATE TABLE Users (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
 
+            cursor.execute(query)
+
             database.commit()
 
             logging.info("creat users table successful")
