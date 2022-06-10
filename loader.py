@@ -8,7 +8,7 @@ class Loader:
     @staticmethod
     def creat_database():
         with psycopg2.connect(config.DATABASE_URL) as database:
-            cursor = database.cursor
+            cursor = database.cursor()
 
             query = """ CREATE TABLE Users (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
 
