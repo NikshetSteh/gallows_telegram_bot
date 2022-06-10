@@ -14,8 +14,7 @@ class Loader:
 
             database.commit()
 
-
-        logging.info("creat users teble sucessfull")
+            logging.info("creat users table successful")
 
     @staticmethod
     def load(users: dict):
