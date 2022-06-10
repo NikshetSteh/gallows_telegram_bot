@@ -12,6 +12,8 @@ class Loader:
         with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = config.DATABESE_NAME) as database:
             query = """ SELECT * FROM users """
 
+            logging.info("creat query")
+
             cursor = database.cursor()
 
             cursor.execute(query)
