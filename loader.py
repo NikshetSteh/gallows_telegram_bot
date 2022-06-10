@@ -9,7 +9,7 @@ class Loader:
     def load(users: dict):
         logging.info("load data...")
 
-        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = "epiz_31926153_top_secret",) as database:
+        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = "epiz_31926153_top_secret") as database:
             query = """ SELECT * FROM users """
 
             cursor = database.cursor()
@@ -34,7 +34,7 @@ class Loader:
         for i in users:
             data.append((i.get_id(), i.get_games(), i.get_wins(), i.get_points()))
 
-        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD) as database:
+        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = "epiz_31926153_top_secret") as database:
             cursor = database.cursor()
 
             query = """ INSERT INTO users(id, games, wins, points) VALUES(?, ?, ?, ?); """
