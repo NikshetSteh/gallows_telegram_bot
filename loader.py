@@ -10,7 +10,7 @@ class Loader:
         with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor
 
-            query = """ CREATE TABLE messages (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
+            query = """ CREATE TABLE users (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
 
 
         logging.info("creat users teble sucessfull")
