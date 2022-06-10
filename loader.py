@@ -1,7 +1,7 @@
 import user
 import config
 
-import sqlite3
+from mysql.connector import connect, Error
 import logging
 
 class Loader:
@@ -9,7 +9,7 @@ class Loader:
     def load(users: dict):
         logging.info("load data...")
 
-        with sqlite3.connect(config.DATABESE_PATH) as database:
+        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD) as database:
             query = """ SELECT * FROM users """
 
             cursor = database.cursor()
@@ -34,7 +34,7 @@ class Loader:
         for i in users:
             data.append((i.get_id(), i.get_games(), i.get_wins(), i.get_points()))
 
-        with sqlite3.connect(config.DATABESE_PATH) as database:
+        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD) as database:
             cursor = database.cursor()
 
             query = """ INSERT INTO users(id, games, wins, points) VALUES(?, ?, ?, ?); """

@@ -1,10 +1,13 @@
 import os
 
-TOKEN = "5363987082:AAF0g60EIWiKVNvg7VtW-6e_M41lkS50hzM"
-
-DATABESE_PATH = "data/db/database.sqlite3"
+TOKEN = os.getenv("TOKEN")
 
 USE_WEBHOOK = True
+
+#database host setting
+DATABESE_HOST = os.getenv("TOKEN")
+DATABESE_USER = os.getenv("TOKEN")
+DATABESE_PASSWORD = os.getenv("TOKEN")
 
 # host settings
 HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
