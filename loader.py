@@ -50,13 +50,11 @@ class Loader:
         with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor()
 
-            args_str = ','.join(cur.mogrify("(%s,%s,%s,%s)", x) for x in data)
-
-            query = """ INSERT INTO Users(id, games, wins, points) VALUES """ + args_str + ";"
+            query = """ INSERT INTO Users(id, games, wins, points) VALUES(%s, %s, %s, %s); """
             query_for_delete = """ DELETE FROM Users; """
 
             cursor.execute(query_for_delete)
-            cursor.execute(query)
+            cursor.executemany(query, data)
 
             database.commit()
 
