@@ -8,7 +8,7 @@ USE_WEBHOOK = True
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-FIRST_START = os.getenv("FIST_START")
+FIRST_START = os.getenv("FIRST_START")
 
 # host settings
 HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
