@@ -6,13 +6,21 @@ import logging
 
 class Loader:
     @staticmethod
+    def creat_database():
+        with psycopg2.connect(config.DATABASE_URL) as database:
+            cursor = database.cursor
+
+            query = """ CREATE TABLE messages (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
+
+
+        logging.info("creat users teble sucessfull")
+
+    @staticmethod
     def load(users: dict):
         logging.info("load data...")
 
         with psycopg2.connect(config.DATABASE_URL) as database:
             query = """ SELECT * FROM users """
-
-            logging.info("creat query")
 
             cursor = database.cursor()
 
@@ -36,7 +44,7 @@ class Loader:
         for i in users:
             data.append((i.get_id(), i.get_games(), i.get_wins(), i.get_points()))
 
-        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = config.DATABESE_NAME) as database:
+        with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor()
 
             query = """ INSERT INTO users(id, games, wins, points) VALUES(?, ?, ?, ?); """

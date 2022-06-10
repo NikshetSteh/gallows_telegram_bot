@@ -65,6 +65,9 @@ async def get_new_message(message: types.Message):
 
     await users[message.from_user.id].get_message(message)
 
+if config.FIRST_START == config.TRUE:
+    loader.Loader.creat_database()
+
 loader.Loader.load(users)
 
 user.load_words("data/")

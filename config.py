@@ -1,10 +1,14 @@
 import os
 
+TRUE = "1"
+
 TOKEN = os.getenv("TOKEN")
 
 USE_WEBHOOK = True
 
 DATABASE_URL = os.getenv("DATABASE_URL")
+
+FIRST_START = os.getenv("FIST_START")
 
 # host settings
 HEROKU_APP_NAME = os.getenv('HEROKU_APP_NAME')
