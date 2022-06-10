@@ -1,7 +1,7 @@
 import user
 import config
 
-from mysql.connector import connect, Error
+import psycopg2
 import logging
 
 class Loader:
@@ -9,7 +9,7 @@ class Loader:
     def load(users: dict):
         logging.info("load data...")
 
-        with connect(host = config.DATABESE_HOST, user = config.DATABESE_USER, password = config.DATABESE_PASSWORD, database = config.DATABESE_NAME) as database:
+        with psycopg2.connect(config.DATABASE_URL) as database:
             query = """ SELECT * FROM users """
 
             logging.info("creat query")
