@@ -50,7 +50,7 @@ class Loader:
         with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor()
 
-            query = """ INSERT INTO Users(id, games, wins, points) VALUES(?, ?, ?, ?); """
+            query = f""" INSERT INTO Users(id, games, wins, points) VALUES{','.join(cursor.mogrify("%s", (x, )) for x in data)}; """
             query_for_delete = """ DELETE FROM Users; """
 
             cursor.execute(query_for_delete)
