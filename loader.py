@@ -54,7 +54,7 @@ class Loader:
             query_for_delete = """ DELETE FROM Users; """
 
             cursor.execute(query_for_delete)
-            cursor.executemany(query, data)
+            cursor.execute(query)
 
             database.commit()
 
