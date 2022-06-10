@@ -67,8 +67,8 @@ async def get_new_message(message: types.Message):
 
 if config.FIRST_START == config.TRUE:
     loader.Loader.creat_database()
-
-loader.Loader.load(users)
+else:
+    loader.Loader.load(users)
 
 user.load_words("data/")
 
