@@ -10,7 +10,7 @@ class Loader:
         with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor
 
-            query = """ CREATE TABLE users (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
+            query = """ CREATE TABLE Users (id INTEGER, games INTEGER, wins INTEGER, points INTEGER); """
 
             database.commit()
 
@@ -21,7 +21,7 @@ class Loader:
         logging.info("load data...")
 
         with psycopg2.connect(config.DATABASE_URL) as database:
-            query = """ SELECT * FROM users """
+            query = """ SELECT * FROM Users """
 
             cursor = database.cursor()
 
@@ -48,8 +48,8 @@ class Loader:
         with psycopg2.connect(config.DATABASE_URL) as database:
             cursor = database.cursor()
 
-            query = """ INSERT INTO users(id, games, wins, points) VALUES(?, ?, ?, ?); """
-            query_for_delete = """ DELETE FROM users; """
+            query = """ INSERT INTO Users(id, games, wins, points) VALUES(?, ?, ?, ?); """
+            query_for_delete = """ DELETE FROM Users; """
 
             cursor.execute(query_for_delete)
             cursor.executemany(query, data)
