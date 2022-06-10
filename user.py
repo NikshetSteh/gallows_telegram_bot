@@ -141,7 +141,7 @@ class User:
         await message.answer(replicas.REPLICAS_DONT_UNDERSTAND)
 
     async def print_statistics(self, message: types.Message):
-        await message.answer(replicas.REPLICAS_STATISTICS.format(self.__games, self.__wins))
+        await message.answer(replicas.REPLICAS_STATISTICS.format(self.__games, self.__wins, self.__points))
 
     async def get_message(self, message: types.Message):
         if self.__now_select_hard:

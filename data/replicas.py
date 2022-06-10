@@ -59,4 +59,5 @@ REPLICAS_DOUBLE_CHAR = '''
 REPLICAS_STATISTICS = '''
 Сыграно игр: {0}
 Побед: {1}
+Очков: {2}
 '''
